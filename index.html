@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyasa Vats-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color:rgb(245, 238, 243);
+        color: rgb(7, 6, 12);
+        font-family: 'Poppins', sans-serif;
+
+    }
+    nav{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: end;
+        height: 100px;
+        background-color: rgb(196, 108, 127);
+        
+    }
+    nav ul{
+          display: flex;
+          justify-content :space-evenly;
+        
+    }
+    nav ul li {
+         list-style: none;
+         margin: 20px 23px;
+
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(29, 28, 32);
+    }
+    
+    nav ul li a:hover{
+          color: rgb(231, 238, 41);
+           font-size: 1.04rem;
+    }
+    .left{
+        font-size: 2rem;
+        margin: 2px 1px;
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .firstSection > div{
+        width: 30%;
+     
+    }
+    .leftSection{
+        color: rgb(112, 24, 87);
+        font-size: 1.5rem ;
+        margin: 23px 0;
+
+    }
+    .leftSection .buttons{ 
+        padding: 30px 0
+
+    }
+    .leftSection .btn{
+        padding: 12px;
+        background: rgb(169, 52, 215);
+        color:white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .rightSection img{
+        width: 80%;
+        margin: 23px 3px;
+        }
+    .purple{
+        color: rgb(19, 9, 9);
+        font-size: 2rem;
+        font: bold;
+    }    
+    #element{
+        color:rgb(16, 13, 13)
+    }
+    .contactform{
+        padding: 0 35px;
+        padding-top: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contactform h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    .contactform form div{
+        font-size: 14px;
+        padding: 12px 20px;
+        margin: 12px 0px;
+
+
+    }
+    .btn{
+        padding: 12px 20px;
+        border-radius: 22px;
+        margin: 12px 0px;
+        color:rgb(230, 213, 198);
+
+    }
+    .btnsm{
+        font-size: 20px;
+    }
+
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> PORTFOLIO</div>
+            <div class="right">
+                <ul> 
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>                 
+                    <li><a href="projects.html">Projects</a></li> 
+                
+                
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is 
+                <div> <span class="purple">Nyasa Gyaneshwar Vats</span> </div>
+                <div> and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="contact.html">
+                    <button class="btn">Contact Me</button></a>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="me.jpeg" alt="">
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Frontend','Web Devloper'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
